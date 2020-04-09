@@ -7,6 +7,8 @@ include(CheckIncludeFiles)
 include(CMakePackageConfigHelpers)
 include(CTest)
 
+set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+
 # Build options
 option(BUILD_SHARED_LIBS "Build shared library" OFF)
 if(APPLE)
