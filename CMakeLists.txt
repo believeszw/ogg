@@ -7,6 +7,7 @@ include(CheckIncludeFiles)
 include(CMakePackageConfigHelpers)
 include(CTest)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
 set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
 
 # Build options
